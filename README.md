@@ -55,7 +55,7 @@ Localtunnel generates a public URL to access the dashboard.
 Copy the public URL from the Colab output (e.g. https://35.237.141.55:8501) and open it in your browser.
 
 # Step 8: Upload the Test dataset
-Upload the testDataset.csv file into Colab.
+Upload the testDataset.csv file into the dashboard.
 
 This dataset simulates real-time IoT sensor data for testing the dashboard.
 
