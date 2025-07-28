@@ -12,49 +12,49 @@ It allows users to:
 
 While the dashboard itself is not connected directly to IoT devices, it demonstrates how IoT-collected data can be leveraged to train ML models and inform irrigation strategies, supporting more sustainable agriculture and efficient water use.
 
-✅ Step 3: Create the Dashboard File
+-Step 1: Install Required Libraries
+Run these commands in a Colab code cell:
+
+!pip install streamlit -q
+!pip install plotly
+!pip install folium
+!pip install streamlit-autorefresh
+
+-Step 2: Create the Dashboard File
 In Colab, create a new file called irrigation_dashboard.py.
 
 This file will contain the Streamlit code for the dashboard.
 
-✅ Step 4: Import the Dataset
+-Step 3: Import the Dataset
 Upload the training dataset ModelDevDataset.csv into the Colab environment.
 
 This dataset will be used to train and evaluate the ML model.
 
-✅ Step 5: Add the Dashboard Code
-Copy and paste your dashboard code into the irrigation_dashboard.py file.
+-Step 4: Add the Dashboard Code
+Copy and paste your dashboard code into irrigation_dashboard.py.
 
-This will define the layout and functionality of the dashboard.
+This defines the layout and functionality of the dashboard.
 
-✅ Step 6: Obtain the Public IP Address
+-Step 5: Obtain the Public IP Address
 Run the following command in Colab:
 
-bash
-Copy
-Edit
 !wget -q -O - ipv4.icanhazip.com
-This retrieves the public IP address of your Colab session.
+➡️ This retrieves the public IP address of your Colab session.
 
-✅ Step 7: Launch the Streamlit App
+-Step 6: Launch the Streamlit App
 Run:
-
-bash
-Copy
-Edit
 !streamlit run irrigation_dashboard.py & npx localtunnel --port 8501
-This will start the Streamlit app.
+This starts the Streamlit app.
 
-Localtunnel will create a public URL to access it.
+Localtunnel generates a public URL to access the dashboard.
 
-✅ Step 8: Access the Dashboard
+-Step 7: Access the Dashboard
 Copy the public URL from the Colab output (e.g. https://35.237.141.55:8501) and open it in your browser.
 
-✅ Step 9: Upload Test Dataset
-Upload the test dataset testDataset.csv into Colab.
+-Step 8: Upload the Test Dataset
+Upload the testDataset.csv file into Colab.
 
 This dataset simulates real-time IoT sensor data for testing the dashboard.
 
-✅ Step 10: Close the Dataset Import Tab
-Close the dataset import tab in Streamlit to improve the dashboard visualization experience.
-
+-Step 9: Close the Dataset Import Tab
+Close the dataset import tab in Streamlit to improve the visualization experience.
